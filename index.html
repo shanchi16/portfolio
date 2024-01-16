@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@400;600&family=Rubik&family=Ubuntu&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: rgb(2, 40, 24);
+            color: white;
+            font-family: 'poppins', san-sarif;
+        }
+        nav {
+            display: flex;
+            background-color: rgb(8, 52, 35);
+            align-items: center;
+            justify-content: space-around;
+            height: 60px;
+        }
+        nav ul {
+            justify-content: center;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 23px;
+            list-style: none;
+        }
+        nav ul li a{
+            list-style: none;
+            text-decoration: none;
+            color: white;
+            
+        }
+        nav ul li a:hover{
+            color: aquamarine;
+            font-size: 1.02rem;
+        }
+        .left{
+            font-size: 2rem;
+            font-weight: lighter;
+        }
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 90px 0;
+            align-items: center;
+        }
+        .firstSection > div{
+            width: 30%;
+        }
+        .leftSide .buttons{
+            padding: 20px 0;
+        }
+        .leftSide .btn{
+            padding: 12px;
+            background-color: rgb(9, 52, 34) ;
+            color: white;
+            border-radius: 6px;
+            border: 0.2px solid white;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .buttons .a{
+
+        }
+        
+        .leftSide { 
+            font-size: 3rem;
+            /* margin: 50px 0; */
+        }
+        .rightSide {
+       
+            align-items: flex-s;
+        }
+        .rightSide img{
+            
+            width: 100%;
+            
+
+        }
+        span{
+            color: rgb(168, 90, 34);
+            font-weight: 800;
+            font-size: 110%;
+        }
+        .text-gray{
+            color: gray;
+            font-size: smaller;
+        }
+
+        .second-section{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+        hr{
+            border: 0;
+            height: 1px;
+            background-color: aquamarine;
+            margin: 40px 120px;
+        }
+        .second-section h1{
+            font-size: 1.7rem;
+        }
+        .second-section .box{
+            background-color: white;
+            height: 2px;
+            margin: 56px 0;
+            width: 80vw;
+            display: flex;
+        }
+        .second-section .vertical-line{
+            height: 93px;
+            background-color: white;
+            width: 1px;
+            /* display: flex; */
+            margin: 0 120px;
+        }
+        .vertical-line .image{
+            margin: 10px 10px 0 10px;
+            width: 50px;
+            height: 50px;
+
+        }
+        .vertical-title a{
+            color: aliceblue;
+            text-decoration: none;
+        }
+
+        .vertical-title{
+            top: 10px;
+            
+            position: relative;
+            font-size: 1.1rem;
+            
+        } 
+        .vertical-title a:hover{
+            font-size: 1.3rem;
+            color: blueviolet;
+            text-decoration: underline;
+        }
+       
+
+        .vertical-desc{
+            top: 10px;
+            width: 170px;
+            font-size: x-small;
+            color: gray;
+            position: relative;
+        }
+        footer{
+            background-color: rgb(4, 27, 18);
+            /* height: 250px; */
+        }
+        .footers {
+            display: flex;
+            padding: 56px 122px;
+            justify-content: space-evenly;
+        }
+        .footers ul{
+            list-style: none;
+        }
+        .footers > div{
+            width: 200px;
+        }
+        footer .footer-rights{
+            text-align: center;
+            color: gray;
+            font-size: x-small;
+            margin: 0 12px;
+            padding: 10px 0;
+        }
+
+        @media screen and (max-width:1500px) {
+            body{
+                position: flex;
+            }
+            .box{
+                flex-direction: column;
+            }
+            .second-section .vertical-line{
+                height: unset;
+            }
+            
+            footer{
+                display: none;
+            }
+            .firstSection{
+                flex-direction: column-reverse;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Mini Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a >Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Projects</a></li>
+                    <li><a href="">Skills</a></li>
+                    <li><a href="">Education</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSide">
+                Hi, this is <span class="name">Harman</span> 
+                <div>I am a passionate</div>
+                <!-- <div >Web Developer</div> -->
+                <span id="element"></span>
+                <div class="buttons">
+                    <!-- <a href = "https://drive.google.com/file/d/1VcQYCVIYWxTb8wwhSO-TEIopTfvWrYWV/view?usp=sharing"
+      Download = "test_image">
+                    
+                    </a> -->
+                    <button class="btn">Download Resume</button>
+                    <button class="btn" onclick="window.open('https://github.com/Shanchi64')" >Visit Github</button>
+                </div>
+            </div>
+            <div class="rightSide">
+                <img src="images/bg1-removebg-preview.png" >
+
+            </div>
+        </section>
+
+        <hr>
+        <section class="second-section">
+            <span class="text-gray">what I have done so far</span>
+            <h1>Work Experience </h1>
+            <div class="box">
+                <div class="vertical-line">
+                    <img class="image" src="images/githubLogo.jpg" alt="">
+                    <div class="vertical-title"><a href="https://github.com/Shanchi64" target="_blank"> Github </a></div>
+                    <div class="vertical-desc">GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere. </div>
+                </div>
+                <div class="vertical-line">
+                    <img class="image" src="images/Instagram_icon.png.webp" alt="">
+                    <div class="vertical-title"><a href="https://www.linkedin.com/in/harman-kaur-470a30228/" target="_blank"> Instagram</a></div>
+                    <div class="vertical-desc">Your Instagram bio is your place to show users who you are. It's where you make your first impression, parade your brand identity, and tempt people to follow you — in 150 characters or less. </div>
+                </div>
+                <div class="vertical-line">
+                    <img class="image" src="images/leetcode-logo.webp" alt="">
+                    <div class="vertical-title"><a href="https://leetcode.com/_harman/" > Leetcode </a></div>
+                    <div class="vertical-desc">LeetCode is the best platform to help you enhance your skills, expand your knowledge and prepare for technical interviews.</div>
+                </div>
+                <div class="vertical-line">
+                    <img class="image" src="images/WhatsApp_icon.png" alt="">
+                    <div class="vertical-title">Whatsapp</div>
+                    <div class="vertical-desc">WhatsApp is a free cross-platform messaging service. It lets users of iPhone and Android smartphones and Mac and Windows PC call and exchange text, photo, audio and video messages with others across the globe for free.</div>
+                </div>
+                <div class="vertical-line">
+                    <img class="image" src="images/linkdin.png" alt="">
+                    <div class="vertical-title"><a href="https://www.linkedin.com/in/harman-kaur-470a30228/">Linkedin</a> </div>
+                    <div class="vertical-desc">LinkedIn is a platform for anyone who is looking to advance their career. This can include people from various professional backgrounds, such as small business owners, students, and job seekers.</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footers">
+            <div class="first-footer">
+                Portfolio 
+                <div></div>
+            </div>
+            <div class="second-footer">
+                <ul>
+                    <li>About</li>
+                    <li>Blog</li>
+                    <li>Careers</li>
+                    <li>Home</li>
+                </ul>
+            </div>
+            <div class="third-footer">
+                <ul>
+                    <li>Support</li>
+                    <li>Home</li>
+
+                </ul>
+            </div>
+
+            <div class="fourth-footer">
+                <ul>
+                    <li>Developers</li>
+                    <li>Web Technologies</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                </ul>    
+            </div>
+
+
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; www.harmanportfolio.com | All rights reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js" ></script>
+
+    <!-- setup and start animation -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Anime Lover', 'Passionate', 'Web Developer', 'UI/UX Designer'], 
+            typeSpeed:100,
+            loop: true,
+        });
+        // function downloadFile(){
+        //     window.open("https://drive.google.com/file/d/1VcQYCVIYWxTb8wwhSO-TEIopTfvWrYWV/view?usp=sharing")
+        // }
+    </script>
+
+</body>
+</html>
